@@ -62,9 +62,10 @@ header nav.desktop ul {
 
 header nav.desktop ul li {
     display: inline-block;
-    padding: 0px 40px;
+    padding: 5px 30px;
     margin: auto 15px auto 15px;
     border-radius: 10px;
+    border: 1px solid darkblue;
 }
 
 header nav.desktop ul li:hover {
@@ -236,7 +237,6 @@ section.about-me {
 #person-full {
     border-radius: 20px;
 }
-
 section.about-me .flex {
     align-items: center;
     gap: 60px;
