@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import logoPortifolio from '../../images/portifolio-logo.png';
 import { Header } from './style';
-import MenuMobile from '../../components/MenuMobile';
+import {BsXLg} from 'react-icons/bs'
 import React, {useEffect} from 'react';
 
 export default function header() {
@@ -40,7 +40,24 @@ export default function header() {
                     <li><a href="#section-projects">Projetos</a></li>
                 </ul>
                 </nav>
-                <MenuMobile/>
+                <div class="open-menu" id="btn-open-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <BsXLg class="bi-x-lg"/>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#top-website">Início</a></li>
+                        <li><a href="#section-skills">Especialidades</a></li>
+                        <li><a href="#about-me">Sobre</a></li>
+                        <li><a href="#section-projects">Projetos</a></li>
+                        <li><a href="#footer">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
             </div>
         </Header>
     )
