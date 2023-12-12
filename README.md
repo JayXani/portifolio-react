@@ -1,2 +1,0 @@
-# portifolio-react
- My portifolio

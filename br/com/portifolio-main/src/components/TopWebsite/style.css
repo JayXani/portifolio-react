@@ -1,0 +1,40 @@
+    .top-website {
+        padding: 40px 4%;
+        margin-top: 100px;
+    }
+
+    .top-website .flex {
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .top-website .txt-top-text h1 {
+        font-size: 42px;
+        line-height: 40px;
+        color: white;
+    }
+
+    .top-website .txt-top-text h1 span {
+        color: rgb(71, 71, 223);
+    }
+
+    .top-website .txt-top-text p {
+        color: white;
+        margin: 40px 0px;
+    }
+
+    .top-website .img-top-website img {
+        position: relative;
+        animation: flut 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flut {
+        0% {
+            top: 0;
+        }
+
+        100% {
+            top: 30px;
+        }
+    }
