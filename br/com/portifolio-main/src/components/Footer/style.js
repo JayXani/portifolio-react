@@ -3,7 +3,6 @@ import { colors } from '../../config/colors';
 
 export const Footer = styled.footer `
     padding: 60px 4%;
-    
     .logo-footer img {
         border-radius: 20px;
     }
@@ -16,7 +15,7 @@ export const Footer = styled.footer `
         padding: 20px 0;
     }
 
-    .border {
+    .border-footer {
         border-top: 2px solid ${colors.spanColor};
     }
 
@@ -29,6 +28,15 @@ export const Footer = styled.footer `
         color: ${colors.textColors};
         padding-left: 10px;
     }
-
+    .Copyright{
+        color:${colors.textColors};
+        text-align: right;
+    }
+    .developer{
+        text-align: center;
+        color: ${colors.links};
+        font-weight: 200;
+        font-size: 15px;
+    }
 
 `

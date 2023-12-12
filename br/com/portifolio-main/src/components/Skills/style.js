@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { colors } from '../../config/colors';
 
 export const Section = styled.section`
     .skills {
@@ -11,7 +12,7 @@ export const Section = styled.section`
     }
 
     .skills .skills-box {
-        color: white;
+        color: ${colors.textColors};
         padding: 40px;
         border: 2px solid white;
         margin-top: 60px;
@@ -26,13 +27,16 @@ export const Section = styled.section`
 
     .skills .skills-box i {
         font-size: 58px;
-        color: rgb(171, 171, 224);
+        color: ${colors.iconSkilss};
     }
 
     .skills .skills-box h3 {
         font-size: 26px;
         margin: 15px 0px;
     }
-
+    .skills span {
+        color: ${colors.spanColor};
+        display: block;
+    }
 
 `

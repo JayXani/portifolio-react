@@ -1,51 +1,33 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import logoPortifolio from '../../images/portifolio-logo.png';
-import { Header } from './style';
-import { BsXLg } from 'react-icons/bs';
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/alt-text */
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import logoPortifolio from '../../images/portifolio-logo.png'
+import { A } from './style';
 
-export default function header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+function header() {
+    return (
+        <Navbar expand="lg" className="bg-body-tertiary" bg='' data-bs-theme="dark" id='header'>
+            <Container>
+                <Navbar.Brand href="#home">
+                    <A href='#header'>
+                        <img src={logoPortifolio} title='home' />
+                    </A>
+                    Meu portifólio
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#top-website">Início</Nav.Link>
+                        <Nav.Link href="#section-skills">Especialidades</Nav.Link>
+                        <Nav.Link href="#about-me">Sobre</Nav.Link>
+                        <Nav.Link href="#section-projects">Projetos</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
 
-  const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  return (
-    <Header id="header">
-      <div className="interface">
-        <div className="logo">
-          <a href="#header">
-            <img src={logoPortifolio} alt="Logo do portifólio" />
-          </a>
-        </div>
-        <nav className="desktop">
-          <ul>
-            <li><a href="#top-website">Início</a></li>
-            <li><a href="#section-skills">Especialidades</a></li>
-            <li><a href="#about-me">Sobre</a></li>
-            <li><a href="#section-projects">Projetos</a></li>
-          </ul>
-        </nav>
-        <div className="open-menu" onClick={handleMenuClick}>
-          <i className="bi bi-list"></i>
-        </div>
-        <div className={menuOpen ? 'menu-mobile menu-opened' : 'menu-mobile'}>
-          <div className="btn-close" onClick={handleMenuClick}>
-            <BsXLg className="bi-x-lg" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#top-website">Início</a></li>
-              <li><a href="#section-skills">Especialidades</a></li>
-              <li><a href="#about-me">Sobre</a></li>
-              <li><a href="#section-projects">Projetos</a></li>
-              <li><a href="#footer">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-        {menuOpen && <div className="overlay-menu" onClick={handleMenuClick}></div>}
-      </div>
-    </Header>
-  );
+    );
 }
+
+export default header;
