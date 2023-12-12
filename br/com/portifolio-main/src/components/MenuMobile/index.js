@@ -1,28 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useEffect } from "react";
+import React from "react";
 import { Container } from "./styled";
 import {BsXLg} from 'react-icons/bs'
 
 export default function menuMobile() {
-    useEffect(() => {
-        const btnMenu = document.getElementById('btn-open-menu');
-        const menuIs = document.getElementById('menu-mobile');
-        const overlay = document.getElementById('overlay-menu');
-        btnMenu.addEventListener('click', () => {
-            menuIs.classList.add('menu-opened');
-        });
-
-        menuIs.addEventListener('click', () => {
-            menuIs.classList.remove('menu-opened');
-        });
-        btnMenu.addEventListener('click', () => {
-            menuIs.classList.add('menu-opened')
-        });
-
-        overlay.addEventListener('click', () => {
-            menuIs.classList.remove('menu-opened')
-        });
-    });
     return (
         <Container>
             <div class="open-menu" id="btn-open-menu">
