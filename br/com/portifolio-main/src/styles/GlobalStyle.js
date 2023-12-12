@@ -105,11 +105,6 @@ export default createGlobalStyle`
             gap: 40px;
         }
 
-        /* SKILLS */
-        .skills {
-            padding: 40px 8%;
-        }
-
         /* ABOUT ME */
         .about {
             padding: 80px 8%;

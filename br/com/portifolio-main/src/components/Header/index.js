@@ -17,7 +17,7 @@ function header() {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto itens-nav">
                         <Nav.Link href="#top-website">Início</Nav.Link>
                         <Nav.Link href="#section-skills">Especialidades</Nav.Link>
                         <Nav.Link href="#about-me">Sobre</Nav.Link>

@@ -1,4 +1,5 @@
 import { styled } from  'styled-components';
+import { colors } from '../../config/colors'
 
 export const Section = styled.section`
    
@@ -42,11 +43,17 @@ export const Section = styled.section`
         background-color: rgba(0, 0, 0, 0.486);
         font-size: 24px;
         font-weight: 600;
-        color: white;
+        color: ${colors.textColors};
         opacity: 0;
         transition: .5s;
     }
-
+    .link-projects{
+        color: ${colors.textColors};
+        text-decoration: none;
+        background-color: ${colors.textProjects};
+        padding:5px;
+        border-radius: 10px;
+    }
     .overlay:hover {
         opacity: 1;
     }

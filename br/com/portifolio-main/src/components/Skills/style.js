@@ -8,16 +8,19 @@ export const Section = styled.section`
     }
 
     .skills .flex {
-        gap: 60px;
+        gap: 50px;
+        flex-wrap: wrap;
     }
 
     .skills .skills-box {
         color: ${colors.textColors};
-        padding: 40px;
+        padding: 10px 5px;
         border: 2px solid white;
-        margin-top: 60px;
+        margin-top: 40px;
         border-radius: 20px;
         transition: .2s;
+        flex-grow: 1;
+        text-align: center;
     }
 
     .skills .skills-box:hover {
@@ -25,14 +28,15 @@ export const Section = styled.section`
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.658);
     }
 
-    .skills .skills-box i {
+    .skills .skills-box .icons-skills {
         font-size: 58px;
         color: ${colors.iconSkilss};
+        justify-items: center;
     }
 
     .skills .skills-box h3 {
         font-size: 26px;
-        margin: 15px 0px;
+        margin: 15px 15px;
     }
     .skills span {
         color: ${colors.spanColor};
