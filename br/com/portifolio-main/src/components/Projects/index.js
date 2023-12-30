@@ -6,9 +6,9 @@ import { Section } from "./style";
 export default function projects() {
     return (
         <Section id="section-projects">
-            <div className="portifolio">
+            <div className="portfolio">
                 <div className="interface">
-                    <h2 className="title">MEU <span>PORTFÓLIO</span></h2>
+                    <h2 className="title">MEU <span>PORTFOLIO</span></h2>
                     <div className="flex">
                         <div className="img-port" style={{ backgroundImage: `url(${projectTask})` }}>
                             <div className="overlay">
