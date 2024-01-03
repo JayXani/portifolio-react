@@ -1,16 +1,16 @@
-import { styled } from  'styled-components';
-import { colors } from '../../config/colors'
+import { styled } from 'styled-components';
+import { colors } from '../../config/colors';
 
 export const Section = styled.section`
-   
-    /*STYLE PORTIFÓLIO*/
-    .portifolio {
+
+    /*STYLE PORTFOLIO*/
+    .portfolio {
         padding: 70px 4%;
         box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.075);
 
     }
 
-    .portifolio .flex {
+    .portfolio .flex {
         justify-content: space-around;
         margin-top: 50px;
     }
@@ -58,4 +58,5 @@ export const Section = styled.section`
         opacity: 1;
     }
 
-`
+`;
+
