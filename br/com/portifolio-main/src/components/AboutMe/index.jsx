@@ -7,7 +7,7 @@ import Buttons from '../Buttons';
 
 export default function aboutMe() {
   return (
-    <Section className="about-me">
+    <Section id="about-me">
       <div className="interface">
         <div className="flex">
           <div className="img-about">
