@@ -30,7 +30,7 @@ export default function footer() {
         <p className="developer">
           Site desenvolvido por Danilo de Araújo Leite Gomes
         </p>
-        <p className="Copyright">©Copyright 2023</p>
+        <p className="Copyright">©Copyright 2024</p>
       </div>
     </Footer>
   );
