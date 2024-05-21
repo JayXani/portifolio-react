@@ -23,5 +23,18 @@ yarn.
 - React-router-dom
 - React-Icons
 
+## ⚙️ Comandos para rodar o código:
+```
+npm i
+yarn i
+or
+pnpm i
+```
+```
+npm run dev
+pnpm run dev
+or
+yarn run dev
+```
 
 ### 🔗 [Link portfólio](https://portifolio-react-inky.vercel.app/)
